@@ -2,11 +2,8 @@ import requests
 from fastapi import HTTPException
 from db.database import SessionLocal, engine
 from fastapi.security import OAuth2PasswordBearer
+from ..config import *
 
-headers = {
-        "X-RapidAPI-Key": "202fb9a6bbmshb1e89c18a8a6361p14bac0jsnf36ebc12ea45",
-        "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com"
-    }
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
